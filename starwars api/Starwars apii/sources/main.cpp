@@ -21,13 +21,14 @@ void printPlanetInfo(int id) {
 int main() {
     int choice, id;
 
-    while (true) {
-        std::cout << "Âûáåðèòå îïöèþ:";
-        std::cout << "1. Ïîëó÷èòü èíôîðìàöèþ î ïåðñîíàæå";
-        std::cout << "2. Ïîëó÷èòü èíôîðìàöèþ î ôèëüìå";
-        std::cout << "3. Ïîëó÷èòü èíôîðìàöèþ î ïëàíåòå";
-        std::cout << "4. Âûõîä";
-        std::cin >> choice;
+   while (true) {
+    std::cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¾Ð¿Ñ†Ð¸ÑŽ:";
+    std::cout << "1. ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑŽ Ð¾ Ð¿ÐµÑ€ÑÐ¾Ð½Ð°Ð¶Ðµ";
+    std::cout << "2. ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑŽ Ð¾ Ñ„Ð¸Ð»ÑŒÐ¼Ðµ";
+    std::cout << "3. ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑŽ Ð¾ Ð¿Ð»Ð°Ð½ÐµÑ‚Ðµ";
+    std::cout << "4. Ð’Ñ‹Ñ…Ð¾Ð´";
+    std::cin >> choice;
+
 
         if (choice == 4) break;
 
@@ -45,7 +46,7 @@ int main() {
             printPlanetInfo(id);
             break;
         default:
-            std::cout << "Îøèáêà\n";
+            std::cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ \n";
         }
     }
 
